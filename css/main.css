@@ -283,7 +283,7 @@ body {
       background: #444;
       box-shadow: 0 20px 20px #444; }
     .boxes .box.blue {
-      background-color: #00adef; }
+      background-color: #00557a; }
       .boxes .box.blue.lifted--corners {
         position: relative; }
         .boxes .box.blue.lifted--corners::before {
@@ -291,7 +291,7 @@ body {
           bottom: 13px;
           transform: skewX(-10deg) rotate(-5deg); }
       .boxes .box.blue .box__footer {
-        background: #29bef6; }
+        background: #005d85; }
     .boxes .box.pink {
       background-color: #e13076; }
       .boxes .box.pink.lifted--corners {
