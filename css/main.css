@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box; }
 
 /* css formula: responsive fonts using rems */
@@ -55,7 +57,9 @@ body {
   align-items: center; }
 
 /* SVG icons */
-.fab, .fas, .far {
+.fab,
+.fas,
+.far {
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat !important; }
@@ -74,11 +78,17 @@ body {
 .fa-google-plus-g {
   background: url("../img/google-plus-g.svg"); }
 
-.fa-facebook-f, .fa-twitter, .fa-google-plus-g {
+.fa-facebook-f,
+.fa-twitter,
+.fa-google-plus-g {
   width: 3rem;
   filter: invert(100%) sepia(1%) saturate(7495%) hue-rotate(77deg) brightness(106%) contrast(102%); }
 
-.fa-bookmark, .fa-map-marker-alt, .fa-clock, .fa-eye, .fa-comment {
+.fa-bookmark,
+.fa-map-marker-alt,
+.fa-clock,
+.fa-eye,
+.fa-comment {
   height: 1.5rem;
   width: 1.5rem; }
 
@@ -89,7 +99,9 @@ body {
   background: url("../img/map-marker-alt.svg");
   filter: invert(28%) sepia(0%) saturate(38%) hue-rotate(251deg) brightness(113%) contrast(82%); }
 
-.fa-clock, .fa-eye, .fa-comment {
+.fa-clock,
+.fa-eye,
+.fa-comment {
   position: absolute;
   top: 15%;
   left: 0; }
@@ -104,10 +116,14 @@ body {
   background: url("../img/comment.svg"); }
 
 /* Headings for SEO best practices */
-.header__heading, .boxes__heading {
+.header__heading,
+.boxes__heading {
   position: absolute; }
 
-.header__heading, .boxes__heading, .tabCards__heading, .contacts__heading {
+.header__heading,
+.boxes__heading,
+.tabCards__heading,
+.contacts__heading {
   display: none;
   font-size: 0;
   line-height: 0;
@@ -180,7 +196,9 @@ body {
       transform: rotate(-405deg); }
     .header .header__wrapper .menu__button__container {
       width: 30px; }
-    .header .header__wrapper .menu__button, .header .header__wrapper .menu__button::before, .header .header__wrapper .menu__button::after {
+    .header .header__wrapper .menu__button,
+    .header .header__wrapper .menu__button::before,
+    .header .header__wrapper .menu__button::after {
       display: block;
       background: #8c8c8c;
       position: absolute;
@@ -207,7 +225,8 @@ body {
         width: 100%;
         background: #fff;
         border-top: none !important; }
-        .header .header__wrapper .menu .menu__li a:hover, .header .header__wrapper .menu .menu__li a:active {
+        .header .header__wrapper .menu .menu__li a:hover,
+        .header .header__wrapper .menu .menu__li a:active {
           color: #595959 !important;
           transition: all 0.5s ease-out; }
 
@@ -238,7 +257,7 @@ body {
     bottom: 150px; }
   .scrollTop:hover {
     background: #fff;
-    border: 3px solid #000; }
+    border: 2px solid #000; }
   .scrollTop .home-btn::before {
     color: #000;
     font-size: 3rem; }
@@ -389,7 +408,9 @@ body {
         height: 35px;
         padding: 1rem; }
 
-.card__body .socials, .post__body .socials, footer .socials {
+.card__body .socials,
+.post__body .socials,
+footer .socials {
   display: flex;
   flex-flow: row wrap;
   flex: 1 1 auto;
@@ -434,7 +455,8 @@ body {
         border-top: 4px solid #f01f0f; }
         .cards .card__item .card__content.color--orange .card__title {
           color: #f01f0f; }
-      .cards .card__item .card__content .card__heading, .cards .card__item .card__content .card__body {
+      .cards .card__item .card__content .card__heading,
+      .cards .card__item .card__content .card__body {
         padding: 1rem; }
       .cards .card__item .card__content .card__heading .card__title {
         margin: 0px;
@@ -447,7 +469,8 @@ body {
         margin: 0;
         height: auto;
         transition: all 0.5s ease-out; }
-        .cards .card__item .card__content .card__body .show-more.show .dots, .cards .card__item .card__content .card__body .show-more .more {
+        .cards .card__item .card__content .card__body .show-more.show .dots,
+        .cards .card__item .card__content .card__body .show-more .more {
           display: none; }
         .cards .card__item .card__content .card__body .show-more.show .more {
           display: inline; }
@@ -463,7 +486,10 @@ body {
           .cards .card__item .card__content .card__body .socials .card__meta .fa-icon__text {
             font-weight: normal;
             margin-left: 2rem; }
-      .cards .card__item .card__content .card__subheading, .cards .card__item .card__content .card__location, .cards .card__item .card__content .card__body, .cards .card__item .card__content .socials {
+      .cards .card__item .card__content .card__subheading,
+      .cards .card__item .card__content .card__location,
+      .cards .card__item .card__content .card__body,
+      .cards .card__item .card__content .socials {
         color: #4e4e4e; }
 
 /* Blog Posts Section */
@@ -526,7 +552,8 @@ body {
           margin: 0;
           height: auto;
           transition: all 0.5s ease-out; }
-          .posts .post__item .post__content .post__body .show-more.show .dots, .posts .post__item .post__content .post__body .show-more > .more {
+          .posts .post__item .post__content .post__body .show-more.show .dots,
+          .posts .post__item .post__content .post__body .show-more > .more {
             display: none; }
           .posts .post__item .post__content .post__body .show-more.show .more {
             display: inline; }
@@ -615,7 +642,8 @@ footer {
       padding: 0 !important;
       width: 55%;
       align-content: center !important; }
-      .tabCards .tabCards__filters .tabCards__filters__wrapper .tabCards__btn, .tabCards .tabCards__filters .tabCards__filters__wrapper .active--btn {
+      .tabCards .tabCards__filters .tabCards__filters__wrapper .tabCards__btn,
+      .tabCards .tabCards__filters .tabCards__filters__wrapper .active--btn {
         padding: 1rem 1.5rem; }
   .card__content.lifted--corners {
     position: relative; }
@@ -623,7 +651,8 @@ footer {
       bottom: 15px !important;
       left: 20px !important;
       width: 85% !important; }
-  .cards, .posts {
+  .cards,
+  .posts {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -631,7 +660,10 @@ footer {
     width: 100%;
     margin: auto;
     padding: 0 !important; }
-    .cards .card__item, .cards .post__item, .posts .card__item, .posts .post__item {
+    .cards .card__item,
+    .cards .post__item,
+    .posts .card__item,
+    .posts .post__item {
       margin: 0 1.5rem 3rem 1.5rem;
       width: calc(1 / 2 * 100% - 30px); }
   .blog__heading__wrapper {
@@ -686,7 +718,8 @@ footer {
     background-size: 22% 2px !important; }
     .tabCards__filters .tabCards__filters__wrapper {
       width: 48% !important; }
-      .tabCards__filters .tabCards__filters__wrapper .tabCards__btn, .tabCards__filters .tabCards__filters__wrapper .active--btn {
+      .tabCards__filters .tabCards__filters__wrapper .tabCards__btn,
+      .tabCards__filters .tabCards__filters__wrapper .active--btn {
         padding: 1rem 2.5rem !important; }
   .cards .card__item {
     width: calc(1 / 3 * 100% - 30px) !important; }
@@ -744,7 +777,8 @@ footer {
           height: 35px;
           top: 45%;
           padding: 1rem 0 3.5rem 1.5rem; }
-          .hero__section .hero__img .hero__text form .hero__search, .hero__section .hero__img .hero__text form .hero__btn__search {
+          .hero__section .hero__img .hero__text form .hero__search,
+          .hero__section .hero__img .hero__text form .hero__btn__search {
             border: 1px solid #474747 !important; }
   .tabCards__filters {
     background-size: 28% 2px !important; }
@@ -778,7 +812,8 @@ footer {
     background-size: 27.8% 2px !important; }
     .tabCards__filters .tabCards__filters__wrapper {
       width: 40% !important; }
-      .tabCards__filters .tabCards__filters__wrapper .tabCards__btn, .tabCards__filters .tabCards__filters__wrapper .active--btn {
+      .tabCards__filters .tabCards__filters__wrapper .tabCards__btn,
+      .tabCards__filters .tabCards__filters__wrapper .active--btn {
         padding: 1rem 4rem !important; }
   .blog__heading__wrapper {
     background-size: 27.8% 2px !important; }
