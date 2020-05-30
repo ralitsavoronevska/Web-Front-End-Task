@@ -176,7 +176,7 @@ body {
       padding: 0.5em;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); }
       .header .header__wrapper #menu__toggle:checked ~ .menu .menu__li.li--profile {
-        background: #f04d24; }
+        background: #a42e0f; }
     .header .header__wrapper #menu__toggle:checked ~ .menu .menu__li a {
       color: #000; }
       .header .header__wrapper #menu__toggle:checked ~ .menu .menu__li a.color--grey {
@@ -378,7 +378,7 @@ body {
 /* Active Filter Button for the Cards */
 .active--btn {
   color: #fff !important;
-  background: #f04d24 !important;
+  background: #a42e0f !important;
   text-transform: uppercase;
   height: 35px;
   padding: 1rem 1.25rem;
@@ -450,7 +450,7 @@ footer .socials {
       .cards .card__item .card__content.color--green {
         border-top: 4px solid #87be01; }
         .cards .card__item .card__content.color--green .card__title {
-          color: #87be01; }
+          color: #436001; }
       .cards .card__item .card__content.color--orange {
         border-top: 4px solid #f01f0f; }
         .cards .card__item .card__content.color--orange .card__title {
@@ -688,10 +688,10 @@ footer {
       width: auto !important;
       justify-content: space-between !important; }
       .header__wrapper .menu .menu__li.li--current a {
-        border-bottom: 3px solid #f04d24 !important;
+        border-bottom: 3px solid #a42e0f !important;
         color: #595959 !important; }
       .header__wrapper .menu .menu__li.li--profile {
-        background: #f04d24;
+        background: #a42e0f;
         padding: 0.5rem 1rem !important; }
         .header__wrapper .menu .menu__li.li--profile a {
           color: #000 !important;
@@ -706,7 +706,7 @@ footer {
       justify-content: center;
       align-items: center; }
       .header__wrapper .menu a:hover, .header__wrapper .menu a:active {
-        border-bottom: 3px solid #f04d24 !important; }
+        border-bottom: 3px solid #a42e0f !important; }
   form {
     width: 50% !important; }
   .boxes {
