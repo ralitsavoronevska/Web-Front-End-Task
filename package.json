@@ -1,0 +1,24 @@
+{
+  "name": "web-front-end-task",
+  "version": "1.0.0",
+  "description": "Web Front End Task for open position @ Economedia",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralitsavoronevska/web-front-end-task.git"
+  },
+  "author": "Ralitsa Voronevska",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ralitsavoronevska/web-front-end-task/issues"
+  },
+  "homepage": "https://github.com/ralitsavoronevska/web-front-end-task#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.14.1"
+  }
+}

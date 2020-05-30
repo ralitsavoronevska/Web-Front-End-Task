@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Web Front-end Task">
+    <meta name="web_author" content="Ralitsa Voronevska">
+    <meta name="theme-color" content="#87be01" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" media="all" />
+    <title>MyPetBg.Com</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__wrapper container">
+        <!-- Logo -->
+        <a href="https://ralitsavoronevska.github.io/web-front-end-task/" class="logo__container">
+          <h1 class="logo__heading">MyPetBg.Com<img class="logo__image" src="img/logo.png" alt="MyPetBg.Com" /></h1>
+        </a>
+        <h2 class="header__heading container">Навигация</h2>
+        <!-- Mobile Menu -->
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__button__container flex--col--center pointer" for="menu__toggle">
+          <span class="menu__button"></span>
+        </label>
+        <!-- Main Menu -->
+        <ul class="menu list flex--col--center desktop--menu">
+          <li class="menu__li pointer li--current">
+            <a href="https://ralitsavoronevska.github.io/web-front-end-task/" class="font--bold color--grey">Начало</a>
+          </li>
+          <li class="menu__li pointer">
+            <a href="#ads" class="font--bold">Обяви</a>
+          </li>
+          <li class="menu__li pointer">
+            <a href="#news" class="font--bold">Новини</a>
+          </li>
+          <li class="menu__li pointer">
+            <a href="#about" class="font--bold">За Нас</a>
+          </li>
+          <li class="menu__li pointer">
+            <a href="#contacts" class="font--bold">Контакти</a>
+          </li>
+          <li class="menu__li pointer li--profile">
+            <a class="font--bold color--orange" href="#">Профил</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero__section container">
+      <div class="hero__img">
+        <div class="hero__text">
+          <h2 class="hero__heading">Lorem Ipsum е елементарен примерен текст</h2>
+          <p class="hero__p">Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</p>
+          <form action="#">
+            <input type="text" name="search" id="search" class="hero__search" aria-label="Search" />
+            <button type="submit" class="hero__btn__search pointer font--sm">Търси</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="scrollTop"><svg class="fas fa-home home-btn"></svg></div>
+
+    <main>
+      <!-- Boxes Section -->
+      <section class="boxes container" id="about">
+        <h2 class="boxes__heading container">За нас</h2>
+        <article class="box blue lifted--corners">
+          <div class="box__content">
+            <h3 class="box__heading">
+              <span class="font--bold">mypet</span> bg .....<br />ние
+              <span class="font--bold">помагаме</span>
+            </h3>
+            <p class="box__text font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</p>
+          </div>
+          <p class="box__footer">Lorem Ipsum</p>
+        </article>
+
+        <article class="box pink lifted--corners">
+          <div class="box__content">
+            <h3 class="box__heading">
+              <span class="font--bold">mypet</span> bg .....<br />ветеринарни
+              <span class="font--bold">клиники</span>
+            </h3>
+            <p class="box__text font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</p>
+          </div>
+          <p class="box__footer">Lorem Ipsum</p>
+        </article>
+      </section>
+
+      <!-- Tabs Section -->
+      <div class="tabCards" id="ads">
+        <h2 class="tabCards__heading container">Обяви</h2>
+        <div class="tabCards__filters">
+          <div class="tabCards__filters__wrapper">
+            <button class="tabCards__btn btn--clearfix pointer font--sm font--bold" id="found">Намерени</button>
+            <button class="tabCards__btn active--btn btn--clearfix pointer font--sm font--bold" id="all">Обяви</button>
+            <button class="tabCards__btn btn--clearfix pointer font--sm font--bold" id="lost">Изгубени</button>
+          </div>
+        </div>
+
+        <ul class="cards list container">
+          <li class="card__item found">
+            <div class="card__content color--green lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>НАМЕРЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Намерено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/found-1.jpg" alt="Намерено малко сладко кученце №1" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="card__item found">
+            <div class="card__content color--green lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>НАМЕРЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Намерено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/found-2.jpg" alt="Намерено малко сладко кученце №2" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="card__item lost">
+            <div class="card__content color--orange lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>ИЗГУБЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Изгубено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/lost-1.jpg" alt="Изгубено малко сладко кученце №1" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="card__item found">
+            <div class="card__content color--green lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>НАМЕРЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Намерено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/found-3.jpg" alt="Намерено малко сладко кученце №3" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="card__item lost">
+            <div class="card__content color--orange lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>ИЗГУБЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Изгубено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/lost-2.jpg" alt="Изгубено малко сладко кученце №2" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="card__item lost">
+            <div class="card__content color--orange lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>ИЗГУБЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Изгубено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/lost-3.jpg" alt="Изгубено малко сладко кученце №3" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="card__item found">
+            <div class="card__content color--green lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>НАМЕРЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Намерено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/found-4.jpg" alt="Намерено малко сладко кученце №4" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="card__item found">
+            <div class="card__content color--green lifted--corners">
+              <section class="card__heading">
+                <h3 class="card__title"><svg class="fas fa-bookmark pointer"></svg>НАМЕРЕНО</h3>
+                <hr />
+                <p class="card__subheading font--bold">Намерено малко сладко кученце</p>
+                <p class="card__location"><svg class="fas fa-map-marker-alt"></svg>Велико Търново</p>
+              </section>
+              <figure class="card__image">
+                <img src="img/found-5.jpg" alt="Намерено малко сладко кученце №5" />
+              </figure>
+              <div class="card__body">
+                <p class="card__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година <span class="dots">...</span><span class="more">, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">повече детайли</button>
+                </p>
+                <hr />
+                <ul class="socials list">
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">27.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">772</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="card__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">42</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Blog Posts Section -->
+      <section class="blog" id="news">
+        <div class="blog__heading__wrapper">
+          <h2 class="blog__heading lifted--corners font--bold">Последни новини</h2>
+        </div>
+
+        <ul class="posts list container">
+          <li class="post__item">
+            <div class="post__content">
+              <figure class="post__image">
+                <img src="img/blog_small.jpg" alt="Последни новини за кученце №1" />
+              </figure>
+              <section class="post__body">
+                <ul class="socials list">
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">03.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">Категория</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">3</span>
+                    </span>
+                  </li>
+                </ul>
+                <h3 class="post__heading">Какво е Lorem Ipsum<span>?</span></h3>
+                <p class="post__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема <span class="dots">...</span><span class="more">няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">Прочети повече</button>
+                </p>
+              </section>
+            </div>
+          </li>
+
+          <li class="post__item">
+            <div class="post__content">
+              <figure class="post__image">
+                <img src="img/blog_small.jpg" alt="Последни новини за кученце №2" />
+              </figure>
+              <section class="post__body">
+                <ul class="socials list">
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">03.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">Категория</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">3</span>
+                    </span>
+                  </li>
+                </ul>
+                <h3 class="post__heading">Какво е Lorem Ipsum<span>?</span></h3>
+                <p class="post__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема <span class="dots">...</span><span class="more">няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">Прочети повече</button>
+                </p>
+              </section>
+            </div>
+          </li>
+
+          <li class="post__item">
+            <div class="post__content">
+              <figure class="post__image">
+                <img src="img/blog_small.jpg" alt="Последни новини за кученце №3" />
+              </figure>
+              <section class="post__body">
+                <ul class="socials list">
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">03.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">Категория</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">3</span>
+                    </span>
+                  </li>
+                </ul>
+                <h3 class="post__heading">Какво е Lorem Ipsum<span>?</span></h3>
+                <p class="post__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема <span class="dots">...</span><span class="more">няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">Прочети повече</button>
+                </p>
+              </section>
+            </div>
+          </li>
+
+          <li class="post__item">
+            <div class="post__content">
+              <figure class="post__image">
+                <img src="img/blog_small.jpg" alt="Последни новини за кученце №4" />
+              </figure>
+              <section class="post__body">
+                <ul class="socials list">
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-clock"></svg>
+                      <span class="fa-icon__text">03.07.2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-eye"></svg>
+                      <span class="fa-icon__text">Категория</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="post__meta">
+                      <svg class="far fa-comment"></svg>
+                      <span class="fa-icon__text">3</span>
+                    </span>
+                  </li>
+                </ul>
+                <h3 class="post__heading">Какво е Lorem Ipsum<span>?</span></h3>
+                <p class="post__desc show-more font--sm">Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема <span class="dots">...</span><span class="more">няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</span>
+                  <button class="read-more-btn btn--clearfix pointer">Прочети повече</button>
+                </p>
+              </section>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer container">
+        <section class="about" id="about-us">
+          <h2 class="about__heading">MyPetBg.Com</h2>
+          <p class="about__desc">
+            Lorem Ipsum е елементарен примерен текст, използван в печатарската и
+            типографската индустрия.
+          </p>
+        </section>
+        <section class="contacts" id="contacts">
+          <h2 class="contacts__heading">Contacts Section</h2>
+          <ul class="socials list">
+            <li><svg class="fab fa-facebook-f pointer"></svg></li>
+            <li><svg class="fab fa-twitter pointer"></svg></li>
+            <li><svg class="fab fa-google-plus-g pointer"></svg></li>
+          </ul>
+          <p class="contacts__desc">Lorem Ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия. Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове.</p>
+        </section>
+      </div>
+
+      <nav class="footer__wrapper">
+        <ul class="footer__menu list desktop--menu">
+          <li class="footer__menu__li pointer"><a href="#">Правила за ползване</a></li>
+          <li class="footer__menu__li pointer"><a href="#">Общи условия</a></li>
+          <li class="footer__menu__li pointer"><a href="#">Карта на сайта</a></li>
+          <li class="footer__menu__li pointer push--right">
+            <a href="#">Copyright &copy; 2020 MyPetBg.Com <span class="block--flex">All rights reserved.</span></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="js/script.js" async></script>
+  </body>
+</html>
