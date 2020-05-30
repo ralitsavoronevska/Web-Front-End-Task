@@ -691,8 +691,10 @@ footer {
         border-bottom: 3px solid #a42e0f !important;
         color: #595959 !important; }
       .header__wrapper .menu .menu__li.li--profile {
-        background: #a42e0f;
+        background: #f07151;
         padding: 0.5rem 1rem !important; }
+        .header__wrapper .menu .menu__li.li--profile:hover {
+          background: #a42e0f; }
         .header__wrapper .menu .menu__li.li--profile a {
           color: #000 !important;
           border: none !important;
