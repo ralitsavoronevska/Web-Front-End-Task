@@ -363,9 +363,9 @@ body {
           bottom: 13px;
           transform: skewX(-10deg) rotate(-5deg); }
       .boxes .box.blue .box__footer {
-        background: #005d85; }
+        background: #0071a3; }
     .boxes .box.pink {
-      background-color: #e13076; }
+      background-color: #ac1653; }
       .boxes .box.pink.lifted--corners {
         position: relative; }
         .boxes .box.pink.lifted--corners::after {
@@ -373,7 +373,7 @@ body {
           bottom: 15px;
           transform: skewY(10deg) rotate(-5deg); }
       .boxes .box.pink .box__footer {
-        background: #e44182; }
+        background: #d01b64; }
 
 /* Active Filter Button for the Cards */
 .active--btn {
