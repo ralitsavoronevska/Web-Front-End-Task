@@ -182,7 +182,7 @@ body {
       .header .header__wrapper #menu__toggle:checked ~ .menu .menu__li a.color--grey {
         color: #595959; }
       .header .header__wrapper #menu__toggle:checked ~ .menu .menu__li a.color--orange {
-        color: #595959; }
+        color: #fff; }
       .header .header__wrapper #menu__toggle:checked ~ .menu .menu__li a:hover, .header .header__wrapper #menu__toggle:checked ~ .menu .menu__li a:active {
         color: #87be01 !important;
         text-shadow: 3px 2px 1px #595959, -1px -1px 0 #595959, 0px 0px 0 #595959, 1px 1px 0 #595959, 2px 2px 0 #595959; }
