@@ -606,7 +606,7 @@ footer {
         display: block;
         color: #fff;
         padding: 1rem; }
-        footer .footer__wrapper .footer__menu a.block--flex {
+        footer .footer__wrapper .footer__menu a span.block--flex {
           display: block; }
 
 @media (min-width: 500px) {
@@ -671,7 +671,7 @@ footer {
   .footer__menu {
     flex-flow: row wrap !important;
     justify-content: space-around; }
-    .footer__menu .block--flex {
+    .footer__menu span.block--flex {
       display: inline-flex !important; } }
 
 @media (min-width: 768px) {

@@ -2,6 +2,7 @@
 (function () {
   'use strict';
 
+  // scrollTop Button
   let scroll = document.querySelector('.scrollTop');
   window.addEventListener('scroll', function() {
     scroll.classList.toggle("active", window.scrollY > 500);
